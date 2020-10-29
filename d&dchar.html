@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Criação de Personagem</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="d&dchar.css" type="text/css" media="screen">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    </head>
+    <body>
+        <h1 style="color: white; background-color: #FF4136;">Criador de Personagem D&D 5e</h1>
+        <div class="tabset">
+            <!-- Tab 1 -->
+            <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+            <label for="tab1">Atributos</label>
+            <!-- Tab 2 -->
+            <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+            <label for="tab2">Raça</label>
+            <!-- Tab 3 -->
+            <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+            <label for="tab3">Classe</label>
+            <!-- Tab 4 -->
+            <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
+            <label for="tab4">Background</label>
+            <!-- Tab 5 -->
+            <input type="radio" name="tabset" id="tab5" aria-controls="dunkles">
+            <label for="tab5">Equipamento</label>
+            <!-- Tab 6 -->
+            <input type="radio" name="tabset" id="tab6" aria-controls="dunkles">
+            <label for="tab6">Detalhes</label>
+
+            <div class="tab-panels">
+                <section class="tab-panel">
+                    <h2>Atributos</h2>
+                    <div style="padding-left:20px;">
+                        Força:
+                        <input type="number" id="STR" size="2" maxlength="2" min="1" max="20"/>
+                        <br>
+                        Destreza:
+                        <input type="number" id="DEX" size="2" maxlength="2" min="1" max="20"/>
+                        <br>
+                        Constituição:
+                        <input type="number" id="CON" size="2" maxlength="2" min="1" max="20"/>
+                        <br>
+                        Inteligência:
+                        <input type="number" id="INT" size="2" maxlength="2" min="1" max="20"/>
+                        <br />
+                        Sabedoria:
+                        <input type="number" id="WIS" size="2" maxlength="2" min="1" max="20"/>
+                        <br />
+                        Carisma:
+                        <input type="number" id="CHA" size="2" maxlength="2" min="1" max="20"/>
+                        <br>
+                    </div>
+                    <label id="nextTab" for="tab2">Raça</label>
+                </section>
+            </div>
+        </div>
+        <p style="font-family:monospace;" id="resultado"> </p>
+        <script src="d&dchar.js" type="text/javascript"></script>
+
+        <p><small>CSS usado no site: <cite><a href="https://codepen.io/markcaron/pen/MvGRYV">https://codepen.io/markcaron/pen/MvGRYV </a></cite></small></p>
+    </body>
+</html>
