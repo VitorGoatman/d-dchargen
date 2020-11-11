@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="d&dchar.css" type="text/css" media="screen">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     </head>
-    <body>
-        <h1 style="color: white; background-color: #FF4136;">Criador de Personagem D&D 5e</h1>
+    <body class="centralizar">
+        <h1 style="color: white; background-color: #FF4136; text-align: center;">Criador de Personagem D&D 5e</h1>
         <div class="tabset">
             <!-- Tab 1 -->
             <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
@@ -55,6 +55,24 @@
                         <br>
                     </div>
                     <label id="nextTab" for="tab2">Raça</label>
+                </section>
+                <section class="tab-panel">
+                    <h1>Raça</h1>
+                    <label for=customRace"">Raça padrão?</label><br />
+                    <input type="radio" name="customRace" value="true" /> Sim
+                    <input type="radio" name="customRace" value="false" /> Não
+                </section>
+                <section class="tab-panel">
+                    <h1>Classe</h1>
+                </section>
+                <section class="tab-panel">
+                    <h1>Background</h1>
+                </section>
+                <section class="tab-panel">
+                    <h1>Equipamento</h1>
+                </section>
+                <section class="tab-panel">
+                    <h1>Detalhes</h1>
                 </section>
             </div>
         </div>
